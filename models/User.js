@@ -10,6 +10,9 @@ User.init(
 			type: DataTypes.STRING,
 			unique: true,
 			allowNull: false,
+			validate: {
+				isAlphanumeric: true,
+			},
 		},
 		password: {
 			type: DataTypes.STRING,
@@ -33,3 +36,5 @@ User.init(
 		},
 	}
 );
+
+module.exports = User;

@@ -10,7 +10,7 @@ Blog.init(
 			allowNull: false,
 		},
 		content: {
-			tpye: DataTypes.STRING,
+			type: DataTypes.STRING,
 			allowNull: false,
 		},
 	},
